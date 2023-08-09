@@ -25,3 +25,199 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.App-header {
+  background-color: #B65F28;
+  display: flex;
+  align-items: center;
+  
+}
+
+.bouton {
+  display: flex;
+  align-items: center;
+  margin-left: 600px;
+  
+}
+
+.bouton > * {
+  margin-right: 20px;
+}
+
+
+.logo-image, .btnpanier {
+
+  width: 10%; 
+  height: 10%; 
+}
+
+.footerchoco {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #2C1E1E; 
+  color: white; 
+  padding: 20px; 
+}
+
+.chocopap,
+.contact,
+.reseaux {
+  flex: 1; 
+  padding: 10px; 
+}
+
+.reseaux {
+  display: flex;
+align-items: center;
+  justify-content: center;
+  
+
+}
+
+.reseaux img {
+  margin-right: 30px;
+  width: 10%;
+  
+}
+
+
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: black;
+}
+
+.custom-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: darkblue;
+  transform: translateY(-2px);
+}
+
+.carousel-image {
+  position: relative;
+  text-align: center;
+}
+
+.button-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.product-thumbnail {
+  flex: 1 0 calc(33% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.product-thumbnail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+} 
+
+.thumbnail-image img {
+  width: 100%;
+  max-height: 120px;
+}
+
+.thumbnail-details {
+  padding: 10px;
+}
+
+.thumbnail-details h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.thumbnail-details p {
+  color: #666;
+}
+
+
+.button-produit {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-produit:hover {
+  background-color: darkblue;
+  transform: translateY(-2px);
+}
+
+
+#filter {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px; 
+  border-radius: 5px;
+}
+
+.contprod {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.FormuleTri {
+  flex: 1;
+  flex: 10%;
+}
+
+
+
+.ListeProduit {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 90%;
+}
+
+
+
