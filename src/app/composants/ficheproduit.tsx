@@ -1,4 +1,6 @@
 import React, { useState,useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { usePanier } from '../composants/panierContext';
 import { useSearchParams } from 'next/navigation';
 import produits from '../products.json';
