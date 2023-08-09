@@ -175,7 +175,7 @@ align-items: center;
 }
 
 
-.button-produit {
+.button-produit, .btnpanierprod {
   background-color: blue;
   color: white;
   padding: 10px 20px;
@@ -189,6 +189,13 @@ align-items: center;
 .button-produit:hover {
   background-color: darkblue;
   transform: translateY(-2px);
+}
+
+.aj {
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  
 }
 
 

@@ -38,27 +38,30 @@ const FicheProduit: React.FC = () => {
 
   return (
     <div>
-      {selectedProduct ? (
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-          <div style={{ marginRight: '20px' }}>
-            <img src={selectedProduct.image} alt={selectedProduct.title} />
+  {selectedProduct ? (
+    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+      <div style={{ marginRight: '20px' }}>
+        <img src={selectedProduct.image} alt={selectedProduct.title} />
+      </div>
+      <div>
+        <h3>{selectedProduct.title}</h3>
+        <p>Prix : {selectedProduct.price} €</p>
+        <p>{selectedProduct.description}</p>
+        <div className="aj">
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+            <button onClick={handleDecrement} disabled={count === 1}>-</button>
+            <p style={{ margin: '0 10px', minWidth: '30px', textAlign: 'center' }}>{count}</p>
+            <button onClick={handleIncrement}>+</button>
           </div>
-          <div>
-            <h3>{selectedProduct.title}</h3>
-            <p>{selectedProduct.description}</p>
-            <p>Prix : {selectedProduct.price} €</p>
-            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-              <button onClick={handleDecrement} disabled={count === 1}>-</button>
-              <p style={{ margin: '0 10px', minWidth: '30px', textAlign: 'center' }}>{count}</p>
-              <button onClick={handleIncrement}>+</button>
-            </div>
-            <button onClick={handleAjouterAuPanier}>Ajouter au panier</button>
-          </div>
+          <button className="btnpanierprod" onClick={handleAjouterAuPanier}>Ajouter au panier</button>
         </div>
-      ) : (
-        <div>Produit non trouvé</div>
-      )}
+      </div>
     </div>
+  ) : (
+    <div>Produit non trouvé</div>
+  )}
+</div>
+
   );
 };
 
