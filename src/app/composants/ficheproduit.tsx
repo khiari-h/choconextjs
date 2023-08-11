@@ -39,23 +39,36 @@ const FicheProduit: React.FC = () => {
   return (
     <div>
   {selectedProduct ? (
-    <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-      <div style={{ marginRight: '20px' }}>
+    <div className="general">
+      <div className="description">
+      <div className="selectedimage">
         <img src={selectedProduct.image} alt={selectedProduct.title} />
       </div>
-      <div>
+      <div className="aj">
         <h3>{selectedProduct.title}</h3>
         <p>Prix : {selectedProduct.price} €</p>
         <p>{selectedProduct.description}</p>
-        <div className="aj">
-          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-            <button onClick={handleDecrement} disabled={count === 1}>-</button>
-            <p style={{ margin: '0 10px', minWidth: '30px', textAlign: 'center' }}>{count}</p>
-            <button onClick={handleIncrement}>+</button>
-          </div>
+        <div className="btnprod">
+        <input
+  type="number"
+  value={count}
+  min="1"
+  style={{ margin: '0 10px', minWidth: '30px', textAlign: 'center' }}
+  onChange={event => setCount(parseInt(event.target.value))}
+/>
+  
+          
           <button className="btnpanierprod" onClick={handleAjouterAuPanier}>Ajouter au panier</button>
+          </div>
         </div>
-      </div>
+                </div>
+        
+      
+      <div className="ingredients">
+        <h1>Ingredients</h1>
+        <br/>
+        <p>{selectedProduct.ingredients}</p>
+        </div>
     </div>
   ) : (
     <div>Produit non trouvé</div>

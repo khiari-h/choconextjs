@@ -12,10 +12,12 @@ import BoutonAccueil from '../composants/boutonAccueil';
 import PanierCounter from '../composants/panierCounter';
 import FicheProduit from '../composants/ficheproduit';
 import ListeProduit from '../composants/listeProduit';
-import FormTri from '../composants/formulaireTri';
+import produits from '../products.json';
 
 
 const Pages: React.FC = () => {
+
+
   return (
     <PanierProvider>
     <div className="Pages">
@@ -33,9 +35,7 @@ const Pages: React.FC = () => {
         </div>
       </header>
       <div className="contprod">
-      <div className="FormuleTri">
-        <FormTri />
-        </div> 
+     
       <div className="ListeProduit">
 <ListeProduit />
 </div>

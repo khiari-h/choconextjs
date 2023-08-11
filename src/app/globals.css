@@ -193,7 +193,7 @@ align-items: center;
 
 .aj {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap:20px;
   
 }
@@ -206,24 +206,68 @@ align-items: center;
   border-radius: 5px;
 }
 
-.contprod {
+.combined-component {
   display: flex;
   gap: 20px;
   padding: 20px;
 }
 
-.FormuleTri {
-  flex: 1;
+
+
+.filter-form {
+ 
   flex: 10%;
 }
 
 
 
-.ListeProduit {
-  flex: 2;
+.product-list {
+
+  flex: 90%;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.aj {
   display: flex;
   flex-direction: column;
-  flex: 90%;
+  gap:20px;
+  
+}
+
+
+
+.btnprod {
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  
+}
+
+
+.selectedimage {
+  margin-right: 20px;
+}
+
+.ingredients {
+  margin-top: 100px;
+}
+
+
+.reset-filters {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 
