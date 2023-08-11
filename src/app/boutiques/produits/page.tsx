@@ -13,8 +13,6 @@ import BoutonAccueil from '../../composants/boutonAccueil';
 import PanierCounter from '../../composants/panierCounter';
 
 
-
-
 const Produit: React.FC = () => {
   return (
     <PanierProvider>
