@@ -50,4 +50,5 @@ const PanierProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
+
 export { PanierProvider, usePanier };
